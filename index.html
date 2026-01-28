@@ -5,73 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ақпараттық Қауіпсіздік Ойыны</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
   <script src="/_sdk/element_sdk.js"></script>
-  <style>
-        body {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Nunito', sans-serif;
-        }
-        
-        html, body, #app {
-            height: 100%;
-            width: 100%;
-        }
-        
-        .game-container {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-            min-height: 100%;
-        }
-        
-        @keyframes celebrate {
-            0%, 100% { transform: scale(1) rotate(0deg); }
-            25% { transform: scale(1.1) rotate(-5deg); }
-            75% { transform: scale(1.1) rotate(5deg); }
-        }
-        
-        .celebrate {
-            animation: celebrate 0.5s ease-in-out infinite;
-        }
-        
-        @keyframes confetti {
-            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
-        }
-        
-        .confetti-piece {
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            animation: confetti 3s ease-out forwards;
-        }
-        
-        .answer-btn {
-            transition: all 0.2s ease;
-        }
-        
-        .answer-btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-        
-        .answer-btn:active:not(:disabled) {
-            transform: translateY(0);
-        }
-        
-        .correct-answer {
-            background: linear-gradient(135deg, #22c55e, #16a34a) !important;
-            border-color: #22c55e !important;
-        }
-        
-        .wrong-answer {
-            background: linear-gradient(135deg, #ef4444, #dc2626) !important;
-            border-color: #ef4444 !important;
-        }
-    </style>
-  <style>@view-transition { navigation: auto; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  
  </head>
  <body>
   <div id="app" class="w-full h-full"></div>
